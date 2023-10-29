@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgba(33,36,57,255);
+    /*padding para prevenir superposición de contenido sobre el navbar
+    (padding del header TIENE que ser igual a este padding-top)*/
+    padding-top: 78px;
+}
+
+.header {
+    position: fixed;
+    /*top: 0; para que no le afecte el padding del body a la navbar*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-radius: 15px;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: .4s;
+}
+
+.navbar a::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .4s;
+}
+
+.navbar a:hover {
+    color: #f34854;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    background: rgba(243,72,84,255);;
+}
+
+.aboutMe {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Para alinear los elementos a los lados */
+    color: white;
+}
+
+.me {
+    flex: .3;
+    padding: 20px;
+}
+
+.me img {
+    width: 100%; /* Ajusta el ancho de la imagen según tus necesidades */
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    display: block; /* Elimina el espacio debajo de la imagen */
+    border-radius: 120px;
+}
+
+.meContainer {
+    flex: 1.7;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
