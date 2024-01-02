@@ -37,6 +37,10 @@ body {
     font-weight: 700;
 }
 
+.logo span {
+    color: #f34854;
+}
+
 .navbar a{
     position: relative;
     font-size: 18px;
@@ -81,8 +85,8 @@ body {
 }
 
 .me img {
-    width: 100%; /* Ajusta el ancho de la imagen según tus necesidades */
-    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    width: 110%; /* Ajusta el ancho de la imagen según tus necesidades */
+    max-width: 110%; /* Asegura que la imagen no sea más ancha que su contenedor */
     display: block; /* Elimina el espacio debajo de la imagen */
     border-radius: 120px;
 }
@@ -90,7 +94,19 @@ body {
 .meContainer {
     flex: 1.7;
     padding: 20px;
-    display: flex;
     align-items: center;
     text-align: center;
+}
+
+.hola {
+    font-size: 40px;
+}
+
+.soy {
+    font-size: 50px;
+    color: #f34854;
+}
+
+.front {
+    font-size: 45px;
 }
